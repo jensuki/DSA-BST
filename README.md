@@ -1,1 +1,2 @@
-# Data Structures + Algorithms: Binary Search Trees
+# Data Structures + Algorithms:
+Binary Search Tree Exercises
