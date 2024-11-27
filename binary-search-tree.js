@@ -201,7 +201,15 @@ class BinarySearchTree {
     } else {
       // found the node to remove
 
-      //case1: node is a leaf ( no children):
+      // case 1: if node is a leaf
+      if (current.left === null && current.right === null && parent === null) { // no parent means this leaf node is root node
+        this.root = null;
+      } else if (parent.left = current) {
+        parent.left = null; // remove node from parents left
+      } else {
+        parent.right = null; // remove node from the parents right
+      }
+      return current;
     }
   }
 
